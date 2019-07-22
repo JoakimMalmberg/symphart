@@ -24,4 +24,27 @@ class Article {
    * @ORM\Column(type="text")
    */
   private $body;
+
+  // Getters & Setters
+  // Id
+  public function getId() {
+    return $this->id;
+  }
+
+  // Title
+  public function getTitle() {
+    return $this->title;
+  }
+  public function setTitle($title) {
+    $this->title = $title;
+  }
+
+  // Body
+  public function getBody() {
+    return $this->body;
+  }
+  public function setBody($body) {
+    $this->body = $body;
+  }
+
 }
